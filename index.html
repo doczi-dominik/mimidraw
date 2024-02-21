@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Excalidraw | Hand-drawn look & feel • Collaborative • Secure</title>
+    <title>Mimidraw</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no"
@@ -14,51 +14,13 @@
     <!-- Primary Meta Tags -->
     <meta
       name="title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
+      content="Mimidraw"
     />
     <meta
       name="description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
+      content="Excalidraw fork Miminek <3"
     />
     <meta name="image" content="https://excalidraw.com/og-image-2.png" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:site_name" content="Excalidraw" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://excalidraw.com" />
-    <meta
-      property="og:title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
-    />
-    <meta property="og:image:alt" content="Excalidraw logo" />
-    <meta
-      property="og:description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
-    />
-    <meta property="og:image" content="https://excalidraw.com/og-image-2.png" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:site" content="@excalidraw" />
-    <meta property="twitter:url" content="https://excalidraw.com" />
-    <meta
-      property="twitter:title"
-      content="Excalidraw — Collaborative whiteboarding made easy"
-    />
-    <meta
-      property="twitter:description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
-    />
-    <meta
-      property="twitter:image"
-      content="https://excalidraw.com/og-twitter-v2.png"
-    />
-
-    <!-- General tags -->
-    <meta
-      name="description"
-      content="Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
-    />
 
     <!------------------------------------------------------------------------->
     <!--   to minimize white flash on load when user has dark mode enabled   -->
@@ -78,31 +40,30 @@
       }
     </style>
     <!------------------------------------------------------------------------->
-    
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
     <!-- Excalidraw version -->
     <meta name="version" content="{version}" />
 
     <link
       rel="preload"
-      href="/Virgil.woff2"
+      href="Virgil.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="/Cascadia.woff2"
+      href="Cascadia.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="/fonts/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     
     <script>
       window.EXCALIDRAW_ASSET_PATH = "/mimidraw/";
@@ -153,9 +114,9 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="assets/index-A0gszmUe.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-P5UHNnk6.css">
-  <link rel="manifest" href="manifest.webmanifest"></head>
+    <script type="module" crossorigin src="/assets/index-P_lK73v_.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-P5UHNnk6.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
 
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
@@ -163,39 +124,5 @@
       <h1 class="visually-hidden">Excalidraw</h1>
     </header>
     <div id="root"></div>
-    
-    <!-- 100% privacy friendly analytics -->
-    <script>
-      // need to load this script dynamically bcs. of iframe embed tracking
-      var scriptEle = document.createElement("script");
-      scriptEle.setAttribute(
-        "src",
-        "https://scripts.simpleanalyticscdn.com/latest.js",
-      );
-      scriptEle.setAttribute("type", "text/javascript");
-      scriptEle.setAttribute("defer", true);
-      scriptEle.setAttribute("async", true);
-      // if iframe
-      if (window.self !== window.top) {
-        scriptEle.setAttribute("data-auto-collect", true);
-      }
-
-      document.body.appendChild(scriptEle);
-
-      // if iframe
-      if (window.self !== window.top) {
-        scriptEle.addEventListener("load", () => {
-          if (window.sa_pageview) {
-            window.window.sa_event(action, {
-              category: "iframe",
-              label: "embed",
-              value: window.location.pathname,
-            });
-          }
-        });
-      }
-    </script>
-    <!-- end LEGACY GOOGLE ANALYTICS -->
-    
   </body>
 </html>
